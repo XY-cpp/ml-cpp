@@ -1,0 +1,84 @@
+[
+  {
+    "shortDescription" : "Ultralytics YOLOv8s-pose model trained on armor.yaml",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "var_1040",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "8.0.83",
+    "modelParameters" : [
+
+    ],
+    "author" : "Ultralytics",
+    "specificationVersion" : 4,
+    "storagePrecision" : "Mixed (Float32, Int8)",
+    "license" : "AGPL-3.0 https:\/\/ultralytics.com\/license",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "640",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "640",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 640 × 640)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "kpt_shape" : "[4, 2]",
+      "stride" : "32",
+      "com.github.apple.coremltools.source" : "torch==2.0.0",
+      "com.github.apple.coremltools.version" : "6.3.0",
+      "task" : "pose",
+      "imgsz" : "[640, 640]",
+      "batch" : "1",
+      "names" : "{0: 'blue_G', 1: 'blue_1', 2: 'blue_2', 3: 'blue_3', 4: 'blue_4', 5: 'blue_5', 6: 'blue_O', 7: 'blue_Bs', 8: 'blue_Bb', 9: 'red_G', 10: 'red_1', 11: 'red_2', 12: 'red_3', 13: 'red_4', 14: 'red_5', 15: 'red_O', 16: 'red_Bs', 17: 'red_Bb', 18: 'dead_G', 19: 'dead_1', 20: 'dead_2', 21: 'dead_3', 22: 'dead_4', 23: 'dead_5', 24: 'dead_O', 25: 'dead_Bs', 26: 'dead_Bb', 27: 'purple_G', 28: 'purple_1', 29: 'purple_2', 30: 'purple_3', 31: 'purple_4', 32: 'purple_5', 33: 'purple_O', 34: 'purple_Bs', 35: 'purple_Bb'}"
+    },
+    "generatedClassName" : "armor_final",
+    "neuralNetworkLayerTypeHistogram" : {
+      "AddBroadcastable" : 2,
+      "Concat" : 16,
+      "Scatter" : 2,
+      "Convolution" : 73,
+      "ActivationSigmoid" : 64,
+      "ReshapeStatic" : 14,
+      "LoadConstantND" : 6,
+      "MultiplyBroadcastable" : 3,
+      "Transpose" : 1,
+      "UpsampleNearestNeighbor" : 2,
+      "PoolingMax" : 3,
+      "Softmax" : 1,
+      "SplitND" : 10,
+      "Add" : 10,
+      "Multiply" : 66,
+      "ConcatND" : 4,
+      "ActivationLinear" : 2,
+      "Slice" : 2
+    },
+    "method" : "predict"
+  }
+]

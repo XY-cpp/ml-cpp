@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Vision-2024",
+            "program": "${workspaceFolder}/bin/main",
+            "cwd": "${workspaceFolder}/bin"
+        }
+    ]
+}

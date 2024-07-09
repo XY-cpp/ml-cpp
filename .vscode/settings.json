@@ -1,0 +1,16 @@
+{
+    "clangd.arguments": [
+        "--all-scopes-completion",
+        "--background-index",
+        "--clang-tidy",
+        "--completion-style=detailed",
+        "--enable-config",
+        "--header-insertion=never",
+        "--pch-storage=disk",
+        "--query-driver=g++",
+    ],
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": true,
+}

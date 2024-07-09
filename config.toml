@@ -1,0 +1,4 @@
+image_path = "../assets/0024.jpg"
+model_path = "../assets/armor.mlmodelc"
+class_num = 36
+point_num = 4
